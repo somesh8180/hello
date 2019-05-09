@@ -1,0 +1,26 @@
+
+class base{
+	base(int k){
+		
+		System.out.println("base ");
+	}	
+}
+class child1 extends base{
+	child1(){
+			super(10);
+		System.out.println("child 1");
+	}
+}
+
+class child2 extends child1{
+	child2(){
+	
+		System.out.println("child 2");
+	}
+}
+public class assig1 {
+
+	public static void main(String[] args) {
+		child2 c1=new child2();
+	}
+}
